@@ -1,0 +1,36 @@
+@font-face {
+    font-family: lemonmilk;
+    src: url(fonts/lemon_milk/LEMONMILK-Regular.otf);
+}
+
+body {
+    margin: 0px;
+    font-family: lemonmilk;
+}
+
+.flexbox {
+    display: flex;
+    width: 100px;
+}
+
+aside {
+    width: 100px;
+    justify-content: left;
+    background-color: lightgreen;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-image: url(images/gronmiljo.jpg);
+    height: 300px;
+}
+
+header h1 {
+    font-size: 50px;
+    color: white;
+    margin: 0;
+}
