@@ -6,27 +6,63 @@
 body {
     margin: 0px;
     font-family: lemonmilk;
+    background-image: url(images/gronmiljo.jpg);
+    background-repeat: no-repeat;
 }
 
 .flexbox {
     display: flex;
-    width: 100px;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vw;
 }
 
 aside {
-    width: 100px;
-    justify-content: left;
-    background-color: lightgreen;
+    position: absolute;
+    right: 0;
+    width: 150px;
+    height: 100%;
+    background-color: limegreen;
+    color: white;
 }
 
+aside h2 {
+    text-align: center;
+}
+
+aside p {
+    margin: 10px;
+}
+
+.menu {
+    position: absolute;
+    width: 20vw;
+    height: 30vw;
+    border-bottom-right-radius: 25px;
+}
 
 header {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
-    background-image: url(images/gronmiljo.jpg);
-    height: 300px;
+    height: 15vw;
+}
+
+.header-background {
+    width: 100%;
+    filter: blur(1px);
+    
+}
+
+.header-text {
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
 }
 
 header h1 {
@@ -34,3 +70,20 @@ header h1 {
     color: white;
     margin: 0;
 }
+
+article {
+    border-top-left-radius: 25px;
+    position: absolute;
+    font-size: initial;
+    padding: 20px;
+    width: 65vw;
+    left: 20vw;
+    background-color: white;
+}
+
+.textbild {
+    margin-right: 20px;
+    width: 10vw;
+    background-color: white;
+}
+
