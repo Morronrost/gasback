@@ -35,10 +35,11 @@ aside p {
 }
 
 .menu {
-    position: absolute;
-    width: 20vw;
+    margin-left: 10px;
+    background-color: white;
+    width: 19vw;
     height: 30vw;
-    border-bottom-right-radius: 25px;
+    border-radius: 25px;
 }
 
 header {
@@ -72,6 +73,7 @@ header h1 {
 }
 
 article {
+    margin-left: 10px;
     border-top-left-radius: 25px;
     position: absolute;
     font-size: initial;
