@@ -7,19 +7,17 @@ body {
     margin: 0px;
     font-family: lemonmilk;
     background-image: url(images/gronmiljo.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
 .flexbox {
     display: flex;
-    justify-content: space-between;
     width: 100%;
     height: 100vw;
 }
 
 aside {
-    position: absolute;
-    right: 0;
     width: 150px;
     height: 100%;
     background-color: limegreen;
@@ -35,12 +33,56 @@ aside p {
 }
 
 .menu {
+    display: flex;
+    justify-content: center;
     margin-left: 10px;
     background-color: white;
-    width: 19vw;
+    width: 20%;
     height: 30vw;
     border-radius: 25px;
 }
+
+.menu ul {
+    display: block;
+    position: absolute;
+    padding: 0;
+}
+
+ul li {
+    list-style-type:none;
+    margin:15px 0;
+    font-size: 33px;
+}
+
+ul li a{
+    text-decoration:none;
+    font-family: lemonmilk;
+    text-align: right;
+}
+
+ul a:link {
+    color: limegreen;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+ul a:visited {
+    color: limegreen;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+ul a:hover {
+    color: greenyellow;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+ul a:active {
+    color: limegreen
+    background-color: transparent;
+    text-decoration: underline;
+  }
 
 header {
     position: relative;
@@ -49,6 +91,7 @@ header {
     align-items: center;
     margin: 0;
     height: 15vw;
+    
 }
 
 .header-background {
@@ -73,19 +116,30 @@ header h1 {
 }
 
 article {
+    display: flex;
+    align-items: stretch;
+    position: absolute;
     margin-left: 10px;
     border-top-left-radius: 25px;
-    position: absolute;
     font-size: initial;
-    padding: 20px;
-    width: 65vw;
-    left: 20vw;
     background-color: white;
+    width: 78%;
+    height: 100%;
+    right: 0px;
 }
 
-.textbild {
-    margin-right: 20px;
-    width: 10vw;
-    background-color: white;
+.article-text {
+    padding: 20px;
+}
+
+footer {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color:grey;
+    border-top: 2px solid white;
 }
 
