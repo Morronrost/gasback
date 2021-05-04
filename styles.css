@@ -5,21 +5,23 @@
 
 body {
     display: flex;
-    flex-direction: column;
-    margin: 0px;
+    flex-direction: column; /* Sätter så att alla flex div-boxar i body stackas lodrätt / på höjden */
+    margin: 0px; /* Tar bort kanten runt hemsidan */
     height: 100%;
     font-family: lemonmilk;
-    background-image: url(images/gronmiljo.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(images/gronmiljo.jpg); /* bakgrundsbild */
+    background-size: cover; /* Gör så att bakgrundsbilden täcker hela sidan */
+    background-repeat: no-repeat; /* Gör så att bakgrundsbilden ej upprepas */
 }
 
+/* class för att aktivera flexbox (Används knappt) */
 .flexbox {
     display: flex;
     width: 100%;
     height: 100vw;
 }
 
+/* Limegrön spalt längs högra sidan av article */
 aside {
     width: 150px;
     height: 100%;
@@ -35,9 +37,10 @@ aside p {
     margin: 10px;
 }
 
+/* Behållaren för knapparna.  */
 .menu {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* centerar elementen i menu (just nu knapparna) */
     margin-left: 10px;
     background-color: white;
     width: 20%;
@@ -87,6 +90,8 @@ ul a:active {
     text-decoration: underline;
   }
 
+
+/* Toppen av sidan där rubrik och underrubrik står */
 header {
     position: relative;
     display: flex;
@@ -118,9 +123,10 @@ header h1 {
     margin: 0;
 }
 
+/* Huvudspalten som innehåller aside och article-content. Använder flexbox för att flytta runt på div-boxarna */
 article {
     display: flex;
-    align-items: stretch;
+    align-items: stretch; /* Gör så att aside fyller hela höjden av article */
     position: absolute;
     margin-left: 10px;
     border-top-left-radius: 25px;
@@ -131,7 +137,7 @@ article {
     right: 0px;
 }
 
-.article-text {
+.article-content {
     padding: 20px;
 }
 
