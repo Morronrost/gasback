@@ -9,8 +9,8 @@
 body {
     display: flex;
     flex-direction: column; /* Sätter så att alla flex div-boxar i body stackas lodrätt / på höjden */
-    margin: 0px; /* Tar bort kanten runt hemsidan */
     height: 100%;
+    margin: 0px; /* Tar bort kanten runt hemsidan */
     font-family: lemonmilk;
     background-image: url(images/gronmiljo.jpg); /* bakgrundsbild */
     background-size: cover; /* Gör så att bakgrundsbilden täcker hela sidan */
@@ -27,7 +27,7 @@ body {
 
 /* Limegrön spalt längs högra sidan av article */
 aside {
-    width: 175px;
+    width: 17vw;
     height: 100%;
     background-color: limegreen;
     color: white;
