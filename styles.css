@@ -146,6 +146,7 @@ article {
 }
 
 .article-content {
+    overflow: scroll;
     padding: 20px;
 }
 .article-content img {
